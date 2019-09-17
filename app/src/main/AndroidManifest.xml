@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appmenuentretenido">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Menú"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NPromedio"
+            android:label="Notas con promedio"></activity>
+        <activity
+            android:name=".NotasPorcentajes"
+            android:label="Notas con porcentaje" />
+        <activity
+            android:name=".Notas"
+            android:label="Calcular Notas" />
+        <activity
+            android:name=".Creditos"
+            android:label="Créditos" />
+        <activity
+            android:name=".CulturaGeneral"
+            android:label="Cultura General" />
+        <activity
+            android:name=".OperacionesMatematicas"
+            android:label="Operaciones Matematicas" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
